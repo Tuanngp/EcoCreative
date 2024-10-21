@@ -1,0 +1,47 @@
+1729514601391|10|statement|SELECT version()
+1729514601404|1|statement|SHOW search_path
+1729514601406|1|statement|SELECT CURRENT_USER
+1729514601408|1|statement|SELECT current_schema
+1729514601410|1|statement|SHOW search_path
+1729514601413|1|statement|SELECT current_schema
+1729514601415|1|statement|SHOW search_path
+1729514601416|1|statement|SELECT current_user
+1729514601440|16|statement|SELECT COUNT(*) FROM pg_namespace WHERE nspname='public'
+1729514601447|2|statement|SET ROLE 'postgres'
+1729514601454|6|statement|SELECT EXISTS (   SELECT 1   FROM   pg_catalog.pg_class c   JOIN   pg_catalog.pg_namespace n ON n.oid = c.relnamespace   WHERE  n.nspname = 'public'   AND    c.relname = 'flyway_schema_history'   AND    c.relkind = 'r' )
+1729514601465|4|statement|/*NO LOAD BALANCE*/ SELECT "installed_rank","version","description","type","script","checksum","installed_on","installed_by","execution_time","success" FROM "public"."flyway_schema_history" WHERE "installed_rank" > -1 ORDER BY "installed_rank"
+1729514601469|2|commit|
+1729514601473|1|statement|SELECT COUNT(*) FROM pg_namespace WHERE nspname='public'
+1729514601475|1|commit|
+1729514601477|1|statement|SET ROLE 'postgres'
+1729514601478|1|statement|SELECT EXISTS (   SELECT 1   FROM   pg_catalog.pg_class c   JOIN   pg_catalog.pg_namespace n ON n.oid = c.relnamespace   WHERE  n.nspname = 'public'   AND    c.relname = 'flyway_schema_history'   AND    c.relkind = 'r' )
+1729514601500|1|statement|SHOW search_path
+1729514601502|1|statement|SELECT CURRENT_USER
+1729514601504|1|statement|SET ROLE 'postgres'
+1729514601507|1|statement|SELECT pg_try_advisory_xact_lock(77433833903597)
+1729514601510|1|statement|SET ROLE 'postgres'
+1729514601511|1|statement|SELECT EXISTS (   SELECT 1   FROM   pg_catalog.pg_class c   JOIN   pg_catalog.pg_namespace n ON n.oid = c.relnamespace   WHERE  n.nspname = 'public'   AND    c.relname = 'flyway_schema_history'   AND    c.relkind = 'r' )
+1729514601513|1|statement|/*NO LOAD BALANCE*/ SELECT "installed_rank","version","description","type","script","checksum","installed_on","installed_by","execution_time","success" FROM "public"."flyway_schema_history" WHERE "installed_rank" > -1 ORDER BY "installed_rank"
+1729514601516|1|commit|
+1729514601519|1|statement|SET ROLE 'postgres'
+1729514601522|1|statement|SELECT set_config('search_path', '"$user", public', false)
+1729514601523|1|commit|
+1729514601528|1|statement|SET ROLE 'postgres'
+1729514601530|1|statement|SELECT set_config('search_path', '"$user", public', false)
+1729514601531|0|commit|
+1729514602089|2|statement|select version()
+1729514602309|9|statement|select * from information_schema.sequences
+1729514602976|1|statement|select * from information_schema.sequences
+1729514603031|2|statement|select * from "public"."role" where 1=0
+1729514641260|7|statement|select a1_0.id,a1_0.address,a1_0.created_by,a1_0.created_date,a1_0.date_of_birth,a1_0.delete_yn,a1_0.description,a1_0.email,a1_0.full_name,a1_0.modified_by,a1_0.modified_date,a1_0.password,a1_0.phone,a1_0.profile_image,a1_0.role_id,a1_0.use_yn,a1_0.username from account a1_0 where a1_0.username='tuan'
+1729514641279|3|statement|select r1_0.role_id,r1_0.description,r1_0.role_name from role r1_0 where r1_0.role_id=2
+1729514641463|2|statement|select a1_0.id,a1_0.address,a1_0.created_by,a1_0.created_date,a1_0.date_of_birth,a1_0.delete_yn,a1_0.description,a1_0.email,a1_0.full_name,a1_0.modified_by,a1_0.modified_date,a1_0.password,a1_0.phone,a1_0.profile_image,a1_0.role_id,a1_0.use_yn,a1_0.username from account a1_0 where a1_0.username='tuan'
+1729514644249|1|statement|select a1_0.id,a1_0.address,a1_0.created_by,a1_0.created_date,a1_0.date_of_birth,a1_0.delete_yn,a1_0.description,a1_0.email,a1_0.full_name,a1_0.modified_by,a1_0.modified_date,a1_0.password,a1_0.phone,a1_0.profile_image,a1_0.role_id,a1_0.use_yn,a1_0.username from account a1_0 where a1_0.username='tuan'
+1729514644252|1|statement|select r1_0.role_id,r1_0.description,r1_0.role_name from role r1_0 where r1_0.role_id=2
+1729514644336|1|statement|select a1_0.id,a1_0.address,a1_0.created_by,a1_0.created_date,a1_0.date_of_birth,a1_0.delete_yn,a1_0.description,a1_0.email,a1_0.full_name,a1_0.modified_by,a1_0.modified_date,a1_0.password,a1_0.phone,a1_0.profile_image,a1_0.role_id,a1_0.use_yn,a1_0.username from account a1_0 where a1_0.username='tuan'
+1729514647936|1|statement|select a1_0.id,a1_0.address,a1_0.created_by,a1_0.created_date,a1_0.date_of_birth,a1_0.delete_yn,a1_0.description,a1_0.email,a1_0.full_name,a1_0.modified_by,a1_0.modified_date,a1_0.password,a1_0.phone,a1_0.profile_image,a1_0.role_id,a1_0.use_yn,a1_0.username from account a1_0 where a1_0.username='tuan'
+1729514647938|1|statement|select r1_0.role_id,r1_0.description,r1_0.role_name from role r1_0 where r1_0.role_id=2
+1729514648023|8|statement|select a1_0.id,a1_0.address,a1_0.created_by,a1_0.created_date,a1_0.date_of_birth,a1_0.delete_yn,a1_0.description,a1_0.email,a1_0.full_name,a1_0.modified_by,a1_0.modified_date,a1_0.password,a1_0.phone,a1_0.profile_image,a1_0.role_id,a1_0.use_yn,a1_0.username from account a1_0 where a1_0.username='tuan'
+1729514660349|2|statement|select a1_0.id,a1_0.address,a1_0.created_by,a1_0.created_date,a1_0.date_of_birth,a1_0.delete_yn,a1_0.description,a1_0.email,a1_0.full_name,a1_0.modified_by,a1_0.modified_date,a1_0.password,a1_0.phone,a1_0.profile_image,a1_0.role_id,a1_0.use_yn,a1_0.username from account a1_0 where a1_0.username='tuan'
+1729514660352|1|statement|select r1_0.role_id,r1_0.description,r1_0.role_name from role r1_0 where r1_0.role_id=2
+1729514660430|2|statement|select a1_0.id,a1_0.address,a1_0.created_by,a1_0.created_date,a1_0.date_of_birth,a1_0.delete_yn,a1_0.description,a1_0.email,a1_0.full_name,a1_0.modified_by,a1_0.modified_date,a1_0.password,a1_0.phone,a1_0.profile_image,a1_0.role_id,a1_0.use_yn,a1_0.username from account a1_0 where a1_0.username='tuan'
