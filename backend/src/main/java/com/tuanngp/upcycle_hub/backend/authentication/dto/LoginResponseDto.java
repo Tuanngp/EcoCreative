@@ -1,11 +1,12 @@
 package com.tuanngp.upcycle_hub.backend.authentication.dto;
 
-import com.tuanngp.upcycle_hub.backend.common.dto.BaseDto;
+import com.tuanngp.upcycle_hub.common.dto.ResponseDto;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
 @EqualsAndHashCode(callSuper = true)
 @Data
-public class LoginResponseDto extends BaseDto {
+public class LoginResponseDto extends ResponseDto {
     private String token;
+    private UserDto user;
 }

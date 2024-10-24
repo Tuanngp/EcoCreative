@@ -1,14 +1,12 @@
 package com.tuanngp.upcycle_hub.backend.authentication.dto;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
-import com.tuanngp.upcycle_hub.backend.common.dto.BaseDto;
-import com.tuanngp.upcycle_hub.backend.entity.Account;
+import com.tuanngp.upcycle_hub.common.dto.ResponseDto;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
 @EqualsAndHashCode(callSuper = true)
 @Data
-public class RegisterResponseDto extends BaseDto {
-    @JsonProperty("account")
-    private Account account;
+public class RegisterResponseDto extends ResponseDto {
+    private String token;
+    private UserDto user;
 }

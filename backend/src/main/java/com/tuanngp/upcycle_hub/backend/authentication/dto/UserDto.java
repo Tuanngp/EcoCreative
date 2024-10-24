@@ -3,14 +3,9 @@ package com.tuanngp.upcycle_hub.backend.authentication.dto;
 import lombok.Data;
 
 @Data
-public class RegisterRequestDto {
+public class UserDto {
     private String username;
-
-    private String password;
-
     private String name;
-
     private String email;
-
-    private Long roleId;
+    private String phone;
 }
