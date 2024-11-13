@@ -21,8 +21,8 @@ import java.util.List;
 @Table(name = "account")
 public class Account extends BaseEntity implements UserDetails {
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
-    @Column(name = "id", nullable = false)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "account_id", nullable = false)
     private Long id;
     @Column(name = "username", nullable = false)
     private String username;
@@ -50,6 +50,11 @@ public class Account extends BaseEntity implements UserDetails {
     private boolean useYn;
     @Column(name = "delete_yn")
     private boolean deleteYn;
+    @Column(name = "lang_code")
+    private String langCode;
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "timezone_id")
+    private TimeZone timezone;
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {

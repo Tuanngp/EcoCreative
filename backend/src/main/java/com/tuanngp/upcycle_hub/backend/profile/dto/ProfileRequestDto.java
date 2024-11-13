@@ -1,6 +1,7 @@
 package com.tuanngp.upcycle_hub.backend.profile.dto;
 
 import lombok.Data;
+import org.springframework.web.multipart.MultipartFile;
 
 import java.util.Date;
 
@@ -13,5 +14,4 @@ public class ProfileRequestDto {
     private String address;
     private Date dateOfBirth;
     private String description;
-    private String profileImage;
 }
